@@ -1,0 +1,23 @@
+{
+    "name": "stackjs",
+    "version": "0.0.1",
+    "description": "Stacking data on browsers. This library is ES 2015 Module.",
+    "main": "src/stack.js",
+    "dependencies": {
+        "underscore": "*"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.8.0",
+        "babel-preset-es2015": "^6.6.0"
+    },
+    "scripts": {
+        "build": "babel src --out-dir build",
+        "test-build": "babel test/src --out-dir test/build",
+        "test": "npm run build && npm run test-build && node test/build/stack.spec.js"
+    },
+    "author": "kohei kawasaki",
+    "license": "MIT",
+    "files": [
+        "lib"
+    ]
+}
